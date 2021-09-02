@@ -1,0 +1,33 @@
+/* @font-face {
+  font-family: Inter;
+  src: url(/vendor/Inter-3.19.zip);
+} */
+.page {
+  max-width: 1280px;
+  margin: auto;
+  font-family: "Inter";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  background-color: #2a2c2f;
+}
+.header {
+  background-color: #2a2c2f;
+  height: 52px;
+  display: flex;
+  padding: 0 48px 0;
+}
+.header__lang-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 18px;
+  margin-left: 18px;
+}
