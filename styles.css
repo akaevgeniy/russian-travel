@@ -247,11 +247,14 @@
   background-image: url(./images/cover-background.png);
   background-size: cover;
   background-position: center;
-  padding: 245px 312px;
   position: relative;
   max-width: 1184px;
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 245px 312px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .cover__background:before {
   content: "";
@@ -439,23 +442,20 @@
         min-content,
         max-content
       );
-    grid-template-columns: minmax(min-content, 340px) minmax(
-        min-content,
-        max-content
-      );
+    grid-template-columns: minmax(min-content, 340px) minmax(min-content, 352px);
     column-gap: 28px;
     margin-bottom: 73px;
   }
   .place__image {
     max-width: 340px;
-    max-height: 340px;
+    max-height: 0;
     padding-bottom: 340px;
     /* padding-bottom: 440px; */
   }
   .place__title {
     font-size: 42px;
     line-height: 110%;
-    max-width: 340px;
+    max-width: 330px;
   }
   .place__paragraph {
     font-size: 16px;
