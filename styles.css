@@ -4,6 +4,7 @@
 } */
 .page {
   max-width: 1440px;
+  min-width: 320px;
   margin: auto;
   font-family: "Inter", "Arial", sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -23,7 +24,6 @@
   display: flex;
   justify-content: space-between;
   max-width: 1184px;
-  min-width: 320px;
   padding-top: 28px;
   margin: 0 auto 0;
 }
@@ -52,7 +52,6 @@
   flex-direction: column;
   align-items: center;
   max-width: 984px;
-  min-width: 320px;
   margin: 56px auto 0px;
   position: relative;
 }
@@ -95,7 +94,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
-  line-height: 14px;
+  line-height: 140%;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #ffffff;
@@ -104,10 +103,8 @@
 .intro {
   max-width: 984px;
   margin: 92px auto 0;
-  min-width: 320px;
 }
 .intro__container {
-  min-width: 320px;
   max-width: 690px;
 }
 .intro__title {
@@ -139,7 +136,6 @@
 .photo-grid {
   display: grid;
   max-width: 1184px;
-  min-width: 320px;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 213px;
@@ -156,7 +152,6 @@
 .places {
   margin: 92px auto 0;
   max-width: 984px;
-  min-width: 320px;
 }
 .place {
   width: 100%;
@@ -243,7 +238,6 @@
 .cover {
   margin: 92px auto 0px;
   max-width: 1184px;
-  min-width: 320px;
 }
 .cover__background {
   background-image: url(./images/cover-background.png);
@@ -302,7 +296,6 @@
   display: flex;
   justify-content: space-between;
   max-width: 1184px;
-  min-width: 320px;
   background-color: #2a2c2f;
   padding-top: 92px;
   padding-bottom: 24px;
@@ -462,5 +455,143 @@
   .footer {
     max-width: 720px;
     padding-top: 88px;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    max-width: 288px;
+    max-height: 42px;
+    padding-top: 16px;
+  }
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 111%;
+  }
+  .header__logo {
+    max-width: 142px;
+  }
+  .lead {
+    max-width: 320px;
+    margin-top: 48px;
+  }
+  .lead__image {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 200px;
+    padding-right: 100%;
+    margin-top: 40px;
+  }
+  .lead__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 110%;
+    max-width: 288px;
+  }
+  .lead__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+    margin-top: 16px;
+    max-width: 288px;
+  }
+  .lead__caption {
+    margin-left: 16px;
+  }
+  .intro {
+    max-width: 288px;
+    margin-top: 64px;
+  }
+  .intro__container {
+    max-width: 100%;
+  }
+  .intro__title {
+    font-size: 32px;
+    line-height: 109%;
+  }
+  .photo-grid {
+    margin-top: 64px;
+    max-width: 288px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 12px;
+  }
+  .photo-grid__item {
+    width: 100%;
+  }
+  .places {
+    margin-top: 64px;
+    max-width: 100%;
+  }
+  .place {
+    display: flex;
+    flex-direction: column;
+    column-gap: 28px;
+    margin-bottom: 50px;
+    column-gap: 32px;
+  }
+  .place__title {
+    font-size: 32px;
+    line-height: 109%;
+    min-width: 288px;
+    margin: 0 auto 0;
+  }
+  .place__website {
+    min-width: 288px;
+    margin: 0 auto 0;
+  }
+  .place__image {
+    max-width: 320px;
+    /* max-height: 320px; */
+    padding-bottom: 320px;
+  }
+  .place__text {
+    max-width: 288px;
+    margin: 0 auto 0;
+  }
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 163%;
+  }
+  .cover {
+    margin-top: 66px;
+  }
+  .cover__background {
+    padding: 33px 16px;
+  }
+  .cover__title {
+    font-size: 32px;
+    line-height: 109%;
+    max-width: 288px;
+    margin-bottom: 16px;
+    min-height: 70px;
+  }
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 114%;
+    max-width: 288px;
+    min-height: 48px;
+  }
+  .footer {
+    flex-direction: column;
+    padding-top: 64px;
+    max-width: 288px;
+  }
+  .footer__links {
+    flex-direction: column;
+  }
+  .footer__links :last-child {
+    margin-bottom: 0;
+  }
+  .footer__link {
+    line-height: 100%;
+    color: #ffffff;
+    margin-bottom: 32px;
+  }
+  .footer__copyright {
+    margin-top: 48px;
+    font-size: 14px;
+    line-height: 100%;
   }
 }
