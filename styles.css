@@ -216,9 +216,10 @@
   font-size: 18px;
   line-height: 163%;
   color: #ffffff;
+  margin-bottom: 26px;
 }
 .place__text :last-child {
-  margin-top: 26px;
+  margin-bottom: 0;
 }
 .place__image_site_kosa {
   background-image: url(./images/place-kosa.jpg);
@@ -321,9 +322,10 @@
   color: #ffffff;
   margin: 0;
 }
-@media (max-width: 1024px) {
+@media screen and (max-width: 1279px) {
   .header {
     max-width: 928px;
+    width: calc((100% - 96px));
   }
   .lead {
     margin-top: 48px;
@@ -338,8 +340,10 @@
   }
   .intro {
     max-width: 928px;
+    width: calc((100% - 96px));
   }
   .photo-grid {
+    width: calc((100% - 96px));
     max-width: 928px;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -353,6 +357,7 @@
     max-width: 300px;
   }
   .places {
+    width: calc((100% - 96px));
     max-width: 928px;
   }
   .place {
@@ -360,13 +365,13 @@
         440px,
         max-content
       );
-    grid-template-columns: minmax(min-content, 460px) minmax(min-content, 484px);
+    grid-template-columns: minmax(460px, max-content) minmax(min-content, 484px);
     column-gap: 32px;
   }
   .place__image {
     max-width: 440px;
     max-height: 440px;
-    /* padding-bottom: 440px; */
+    padding-bottom: 440px;
   }
   .cover {
     max-width: 100%;
@@ -376,18 +381,20 @@
   }
   .footer {
     max-width: 928px;
+    width: calc((100% - 96px));
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .header {
     max-width: 720px;
+    width: calc((100% - 48px));
   }
   .lead {
     max-width: 768px;
   }
   .lead__image {
     /* max-width: 100%; */
-    max-width: 768px;
+    max-width: 100%;
     box-sizing: border-box;
     padding-bottom: 480px;
     padding-right: 100%;
@@ -422,7 +429,7 @@
         340px,
         max-content
       );
-    grid-template-columns: minmax(min-content, 340px) minmax(
+    grid-template-columns: minmax(340px, max-content) minmax(
         min-content,
         max-content
       );
@@ -442,9 +449,7 @@
   .place__paragraph {
     font-size: 16px;
     line-height: 163%;
-  }
-  .place__text :last-child {
-    margin-top: 25px;
+    margin-bottom: 25px;
   }
   .cover {
     margin-top: 90px;
@@ -457,11 +462,12 @@
     padding-top: 88px;
   }
 }
-@media (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .header {
     max-width: 288px;
     max-height: 42px;
     padding-top: 16px;
+    width: calc((100% - 32px));
   }
   .header__lang-link {
     font-size: 18px;
@@ -594,4 +600,6 @@
     font-size: 14px;
     line-height: 100%;
   }
+}
+@media (max-width: 424px) {
 }
