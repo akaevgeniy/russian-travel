@@ -1,0 +1,7 @@
+.header__lang-links {
+  display: flex;
+  align-items: flex-end;
+}
+.header__lang-links :first-child {
+  margin: 0;
+}

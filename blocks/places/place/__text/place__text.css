@@ -1,0 +1,17 @@
+.place__text {
+  max-width: 484px;
+}
+.place__text :last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .place__text {
+    max-width: 383px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .place__text {
+    min-width: 288px;
+    width: calc((100% - 32px));
+  }
+}
