@@ -7,6 +7,10 @@
   color: #ffffff;
   margin-left: 18px;
   text-decoration: none;
+  transition: opacity 0.5s linear;
+}
+.header__lang-link:hover {
+  opacity: 0.8;
 }
 @media screen and (max-width: 767px) {
   .header__lang-link {
