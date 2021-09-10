@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
 }
-.cover__background:before {
+.cover__background::before {
   content: "";
   display: block;
   background-color: #2a2c2f;
