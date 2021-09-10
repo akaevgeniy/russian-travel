@@ -23,14 +23,13 @@
   .place__title {
     font-size: 32px;
     line-height: 35px;
-    min-width: 383px;
-    max-width: 100%;
-    margin: 0;
+    min-width: 100%;
   }
 }
 @media screen and (max-width: 424px) {
   .place__title {
     min-width: 288px;
+    max-width: 100%;
     width: calc((100% - 32px));
   }
 }
